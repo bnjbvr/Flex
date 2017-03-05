@@ -28,12 +28,12 @@
           {% endfor %}
       {% endif %}
 
-      {% if 'post_stats' in PLUGINS %}
+      {% if 'minchin.pelican.plugins.post_stats' in PLUGINS %}
         &#8226; {{ article.stats['read_mins'] }} min read
       {% endif %}
     </p>
   </header>
-  <div>
+  <div class="content">
     {% if summarise or article.metadata['summary'] or SUMMARY_MAX_LENGTH %}
       {% if  article.featured_image %}
         <img src="{{ article.featured_image }}">

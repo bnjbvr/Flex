@@ -22,7 +22,7 @@
         <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
       {% endif %}
 
-      {% if 'post_stats' in PLUGINS %}
+      {% if 'minchin.pelican.plugins.post_stats' in PLUGINS %}
         &#8226; {{ article.stats['read_mins'] }} min read
       {% endif %}
     </p>
@@ -38,7 +38,7 @@
     </script>
   {% endif %}
 
-  <div>
+  <div class="content">
     {{ article.content }}
   </div>
 
