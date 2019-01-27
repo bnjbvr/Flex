@@ -187,6 +187,10 @@
     {% include "partial/piwik.html" %}
   {% endif %}
 
+  {% if FATHOM_URL and FATHOM_SITE_ID %}
+    {% include "partial/fathom.html" %}
+  {% endif %}
+
   {% include "partial/jsonld.html" %}
 
   {% block additional_js %}{% endblock %}
